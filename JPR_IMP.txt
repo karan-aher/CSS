@@ -1,0 +1,45 @@
+JPR External Paper Writing Points :- 
+s
+1)Title:- Develop program to implement: Single inheritance.
+2)Title Related Information :- Single inheritance in Java is a type of inheritance where a subclass (child class) 
+				inherits from only one superclass (parent class). This means the subclass gets the properties and 
+				behaviors (fields and methods) 
+				of that one superclass.
+3)Program :-
+	// Parent class
+class Animal {
+    void eat() {
+        System.out.println("This animal eats food.");
+    }
+}
+
+// Child class
+class Dog extends Animal {
+    void bark() {
+        System.out.println("The dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+        myDog.eat();  // Inherited method
+        myDog.bark(); // Own method
+    }
+}
+
+4)Output :-
+	This animal eats food.
+	The dog barks.
+
+5)Conclusion :-
+		The program shows single inheritance in Java, where the Dog class inherits from the Animal class. 
+		It reuses the eat() method from the parent and adds its own bark() method, showing how inheritance 
+		supports code reuse and extension.
+
+
+
+
+
+
+
